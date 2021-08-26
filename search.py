@@ -56,12 +56,12 @@ def fetch(query):
         url = 'https://api.github.com/search/code?' + urllib.parse.urlencode({
             'q': query,
             'per_page': 100, # largest page size allowed by the API
-            'access_token': token,
             'page': page
         })
     
         request = urllib.request.Request(url, headers={
-            'accept': 'application/vnd.github.v3.text-match+json'
+            'accept': 'application/vnd.github.v3.text-match+json',
+            f'authorization': 'token ' + token
         })
     
         try:
