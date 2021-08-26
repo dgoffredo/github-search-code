@@ -23,3 +23,6 @@ $ export access_token=YOUR_GITHUB_API_TOKEN_HERE
 $ ./search.py parsley fish >results.html
 $ firefox results.html
 ```
+You'll need a [github API key][1].  It doesn't need any privileges.
+
+[1]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
